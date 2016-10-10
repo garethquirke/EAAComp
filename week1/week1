@@ -1,0 +1,4 @@
+more /proc/cpuinfo
+grep processor /proc/cpuinfo
+grep processor /proc/cpuinfo | wc -w
+
