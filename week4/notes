@@ -11,3 +11,10 @@ gareth@ubuntu: echo $name
 echo $( date ) >> file.txt
 
 echo 'date' >> file.txt
+
+
+// ls command piped into more will give directories page by page
+
+ls | more
+
+

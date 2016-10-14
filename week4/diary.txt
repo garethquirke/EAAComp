@@ -4,3 +4,7 @@ Fri Oct 14 01:54:05 PDT 2016
 and tomorrow is saturday
 Fri Oct 14 02:02:47 PDT 2016
 good morning san diego
+date
+file changed now
+$date
+yo
