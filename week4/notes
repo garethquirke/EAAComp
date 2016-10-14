@@ -1,0 +1,13 @@
+notes:
+
+// Reading from a user input
+
+gareth@ubuntu: read name
+gareth
+gareth@ubuntu: echo $name
+
+// Sending a command to be executed within another command, echo
+
+echo $( date ) >> file.txt
+
+echo 'date' >> file.txt
