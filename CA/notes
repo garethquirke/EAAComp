@@ -1,0 +1,72 @@
+1)Permissions of file
+FT O G U
+
+File type
+Owner of file
+Group
+Other Users
+
+-rwxrw-r--
+
+file-read-write-executable  read-write read
+
+A file that is read writable and executable by the owner of the file
+A file that is read and writeable for the group
+A file that is readable by other users
+
+2) change file permissions so it can be executed
+
+chmod +x script.sh
+
+3) using ls , list files by date created etc
+
+// by order of oldest modified
+ls -c -l 
+
+// by order of newest modified
+ls -c -r -l
+
+4)  A batch script that takes in the name of a person as a parameter
+    if the name is equal to the name of the user then show a list of
+    all running procceses.
+
+// reading from user
+#!/bin/bash
+
+read name
+
+if [ "$name" == "$USER" ]
+
+	then  
+	
+	ps
+
+fi
+
+// reading from parameter
+#!/bin/bash
+
+if [ "$1" == "$USER" ]
+then ps
+
+else
+echo "not a matching username"
+
+fs
+
+5) Show all the directories even hidden in home
+ls -a
+OR
+dir -a
+
+6) a script that will accept a user input for name
+   if it matches it will list all currently logged 
+   on users
+
+#!/bin/bash
+read name
+if [ "$name" == "$USER" ]
+then 
+     who -u | grep "$name"
+fi
+
